@@ -105,7 +105,8 @@ class ExporterRepresentation extends AbstractEntityRepresentation
 
         $logger = $this->getServiceLocator()->get('Omeka\Logger');
         $this->writer->setLogger($logger);
-
+        }
+        
         return $this->writer;
     }
 
